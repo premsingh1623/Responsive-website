@@ -1,0 +1,45 @@
+#home{
+    margin: 150px auto;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('./image/a.png');
+    background-size: cover;
+    height: 80%;
+    width: 90%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.box2 h1{
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#services1{
+    padding-top: 150px;
+}
+.box7 h3{
+    color: #025;
+}
+#serve4{
+    margin-top: 0px;
+}
+
+.fade-in{
+    position:relative;
+    overflow:hidden;
+    animation-name:fadein;
+    animation-delay:0s;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+    z-index: -1;
+}
+@keyframes fadein {
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.50;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}

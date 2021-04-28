@@ -1,0 +1,557 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-attachment: scroll !important;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 65px;
+    top: 0px;
+    position:fixed; 
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color:white;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#logo{
+     margin-left: 35px;
+}
+#logo h2,h3{
+    display: inline;
+    font-family: 'Leckerli One';
+    font-size: 24px;
+}
+#logo h2{
+    border-radius: 35px;
+    padding: 7px 16px;
+    background-color:black;
+    color: white;
+}
+#logo h3{
+    color: #025;
+}
+#logo a{
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+#navbar ul{
+    margin-left: 45em;
+    display: flex;
+}
+#navbar li a{
+    text-decoration: none;
+    display: block;
+    color: #025;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family:'Josefin Slab';
+}
+
+#navbar ul li{
+    list-style-type: none;
+}
+.btn{
+    border-radius: 5px;
+    background-color: #025;
+    padding: 15px 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 220px;
+    
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(66, 95, 141);
+    transform: scale(1.05, 1);
+    transition-duration: 0.5s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 23px;
+    
+}
+.dropdown-content a {
+    color: #025;
+    padding: 12px 53px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    transform: scale(1.05, 1);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: scale(1.05, 1);
+   
+ }
+  
+
+.btn i {
+    color: white;
+}
+.btn span {
+    color: white;
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    top: 0px;
+    margin-bottom: 300px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-color: #eef0f4;
+    height: 190%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+.box{
+    padding: 10px 80px 0px 18px ;
+}
+.box h1{
+    text-align: center;
+    font-size: 3.8rem;
+    color: #8ea5a0;
+    margin: 300px 0px -15px 0px;
+    font-family: :Georgia, 'Times New Roman', Times, serif;
+}
+.box1{
+    padding: 250px 40px 0px 25px;
+}
+.box1 p{
+    padding-bottom: 50px;
+}
+
+.box1 h1{
+    text-align: left;
+    font-size: 4rem;
+    color: #025;
+    margin: 20px 30px 40px 0px;
+    font-family: Sato, sans-serif;
+}
+.box img{
+    height: 700px;
+    width: 697px;
+    border-radius: 10px;
+}
+.box img:hover{
+    opacity: 0.8;
+    transform:scale(1.03);
+    transition-duration: 1s;
+}
+#home p{
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    padding-right: 150px;
+    line-height: 2;
+    color: #025;
+    font-family: Sato, sans-serif;
+}
+#client {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    
+    
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background-color: #025;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    -webkit-transform: rotate(-2deg) skew(-2deg);
+}
+.box2{
+    text-align: center;
+}
+.box2 h1{
+    color: white;
+    padding: 10px 200px;
+    
+}
+.box2 p{
+    color: white;
+    padding: 10px 20px;
+}
+#serve{
+    background-color:white;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+#serve h1{
+    padding: 50px 320px;
+    font-size: 4.5rem;
+    color: #025;
+}
+.secondary{
+    font-size: 2.1rem;
+    padding: 12px 80px;
+}
+.center{
+    text-align: center;
+    color: #025;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 30px;
+}
+
+#services{
+    display: flex;
+    height: 1200px;
+    margin: auto;
+    padding: 0px 100px;
+}
+
+#services .box3{
+    
+    padding: 20px 70px;
+}
+#services .box3 img{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+#services .box3 img:hover{
+    opacity: 0.8;
+    transform: scaleX(1.5);
+    transition-duration: 1s;
+}
+.box3 p{
+    font-size: 1.05rem;
+    padding: 20px 60px;
+    line-height: 30px;
+}
+#serve1{
+    background-color:#eef0f4;
+    height: 500px;
+    margin-top: 100px;
+    text-align: left;
+    padding-top: 150px;
+    padding-right: 45%;
+    padding-left: 50px;
+}
+#serve1 h1{
+    padding-bottom: 50px;
+    font-size: 4.5rem;
+    color: #025;
+}
+#serve1 p{
+    padding-bottom: 50px;
+    padding-right: 150px;
+    font-size: 1.1rem;
+    color: #025;
+}
+#services1{
+    display: flex;
+    height: 600px;
+    background-color:#eef0f4;
+}
+#services1 .box4 img{
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+#services1 img:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+#services1 h1{
+    background-color: white;
+    padding: 20px 12px;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+.left{
+    text-align: left;
+    color: #025;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#services1 a{
+    background-color: white;
+    padding: 10px 258px 10px 10px;
+    margin: 0px 70px;
+    text-decoration: none;
+}
+#serve2{
+    background-color:#025;
+    background-image: url("https://assets.website-files.com/5e80894f63c557e083ed96b4/5e808c24d802d6d97489018c_Lines%201.svg");
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: left;
+    padding-top: 150px;
+    padding-right: 45%;
+    padding-left: 50px;
+}
+#serve2 h1{
+    padding-bottom: 50px;
+    font-size: 4.5rem;
+    color: white;
+}
+#serve2 p{
+    padding-bottom: 50px;
+    padding-right: 150px;
+    font-size: 1.1rem;
+    color: white;
+}
+#services2{
+    display: flex;
+    height: 700px;
+    background-color:#025;
+}
+#services2 .box4 img{
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+#services2 img:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+#services2 h1{
+    background-color: white;
+    padding: 20px 12px;
+    margin: 0px 70px;
+    cursor: pointer;
+}
+
+#services2 a{
+    background-color: white;
+    padding: 10px 258px 10px 10px;
+    margin: 0px 70px;
+    text-decoration: none;
+}
+.btn1{
+    border-radius: 5px;
+    background-color:white;
+    padding: 15px 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 220px;
+    transition-duration: 0.5s;
+    border: none;
+}
+.btn1:hover{
+    background-color: rgb(188, 197, 211);
+    transform: scale(1.05, 1);
+}
+.btn1 i , span{
+    color:#025;
+}
+.box5{
+    padding: 200px 80px 0px 18px ;
+}
+.box5 img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.box5 img:hover{
+    opacity: 0;
+    transition-duration: 2s;
+}
+.box5::before{
+    content: "";
+    position: absolute;
+    background-color: #025;
+    background-image: url("https://assets.website-files.com/5e80894f63c557e083ed96b4/5e808c24d802d6d97489018c_Lines%201.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    width: 600px;
+    z-index: -1;
+    opacity: 1;
+}
+#serve3{
+    display: flex;
+    flex-direction: row;
+    padding: 3px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    top: 0px;
+    margin-bottom: 300px;
+}
+#serve4{
+    background-image: url("./image/for.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 80px;    
+}
+#serve4 h1{
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-size: 4.5rem;
+    color: #025;
+}
+#serve4 p{
+    padding-bottom: 50px;
+    font-size: 1.4rem;
+    color: #025;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.box6{
+    margin:100px 50px;
+    background-color:rgb(184, 200, 224);
+    border-radius: 10px;
+}
+.form-group input{
+    color: #025;
+    border-radius: 5px;
+    background-color: rgb(162, 184, 216);
+    padding: 20px 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 320px;
+    border: none;
+    margin-bottom: 100px;
+}
+.form-group input:hover{
+    background-color: #eef0f4;
+    transition-duration: 1s;
+}
+.form-group button{
+    width: 320px;
+    padding: 20px 30px;
+    border: none;
+}
+::placeholder{
+    color: #025;
+}
+#add{
+    display: flex;
+    background-color: #eef0f4;
+}
+.box7 h2,h3{
+    display: inline;
+    font-family: 'Leckerli One';
+    font-size: 24px;
+}
+.box7{
+    margin: 50px 250px 50px 50px;
+}
+.box7 h2{
+    border-radius: 35px;
+    padding: 7px 16px;
+    background-color:black;
+    color: white;
+}
+.box7 a{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+.box7 h1{
+    margin: 7px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #025;
+    cursor: pointer;
+}
+.box7 h4{
+    margin: 20px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #025;
+}
+.bottom{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px 0px;
+    background-color: #025;
+    color: white;
+}
+.bottom a {
+    padding:0px 8px;
+    text-decoration: none;
+    color: white;
+}
+.bottom .top{
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+.fade-in p{
+    position:relative;
+    overflow:hidden;
+    animation-name:slideup;
+    animation-delay:0s;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+    z-index: -1;
+}
+@keyframes slideup {
+  0%{bottom:-30px}
+  100%{bottom:0;}
+}
+.fade-in h1{
+    position:relative;
+    overflow:hidden;
+    animation-name:slideup;
+    animation-delay:0s;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+    z-index: -1;
+}
+@keyframes slideup {
+  0%{bottom:-30px}
+  100%{bottom:0;}
+}
+ 
+ 
+
+  
+  
+  
