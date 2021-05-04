@@ -719,9 +719,25 @@
         float: right;
         color: white;
         text-decoration: none;
-    }   
+    }
+    .dropdown-content {
+        min-width: 165px;   
+    }
+    .dropdown-content a {
+        color: #025;
+        margin: 1em 0em;
+        font-size: 1em;
+    }  
 }
 @media screen and (max-width:480px){
+    .dropdown-content a {
+        color: #025;
+        margin: 0.5em 0em;
+        font-size: 0.7em;
+    } 
+    #navbar{
+        position:absolute;
+    }
     #home{
         margin-top: 15vh;
     }
