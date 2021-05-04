@@ -547,7 +547,7 @@
     overflow:hidden;
     animation-name:slideup;
     animation-delay:0s;
-    animation-duration:2s;
+    animation-duration:0.5s;
     animation-fill-mode:forwards;
     animation-timing-function:ease-out;
     z-index: -1;
@@ -561,7 +561,7 @@
     overflow:hidden;
     animation-name:slideup;
     animation-delay:0s;
-    animation-duration:2s;
+    animation-duration:0.5s;
     animation-fill-mode:forwards;
     animation-timing-function:ease-out;
     z-index: -1;
