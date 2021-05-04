@@ -735,17 +735,7 @@
         margin: 0.5em 0em;
         font-size: 0.7em;
     } 
-    #home::before {
-        content: "";
-        position: absolute;
-        background-image: url(./image/a.png);
-        background-size: cover;
-        height: 80%;
-        width: 90%;
-        top: 10vh;
-        z-index: -1;
-        opacity: 0.89;
-    }
+    
     #navbar{
         position:absolute;
     }
@@ -762,17 +752,7 @@
         flex-direction: column;
         height: 45vh;   
     }
-    #client::before{
-        content: "";
-        position: absolute;
-        background-color: #025;
-        height: 30%;
-        width: 100%;
-        top: 25vh;
-        z-index: -1;
-        opacity: 1;
-        -webkit-transform: rotate(-2deg) skew(-2deg);
-    }
+    
     .form-group input{
         width: 200px;
         align-items: center;
