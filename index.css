@@ -768,8 +768,9 @@
     #serve3 h1{
         font-size: 1.5rem;
     }
-    #services1 a {
+    #services2 a {
         margin: 0 0vh;
+        width: auto;
     }
     #services1 h1 {
         margin: 0 5vh;
