@@ -1,6 +1,6 @@
 #home{
-    margin: 150px auto;
-    height: 600px;
+    margin: 10% auto;
+    height: 100vh;
 }
 #home::before{
     content: "";
@@ -17,10 +17,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #services1{
-    padding-top: 150px;
-}
-#services2{
-    padding-top: 150px;
+    padding-top: 10%;
 }
 .box7 h3{
     color: #025;
