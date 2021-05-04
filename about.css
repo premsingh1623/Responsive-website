@@ -183,9 +183,18 @@
     opacity: 0.89;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 480px) {
   #home {
     flex-wrap: wrap;
     margin-top: 15vh;
+  }
+  #home::before {
+    content: "";
+    position: absolute;
+    background-color: #d2e4e0;
+    height: 130vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
   }
 }
