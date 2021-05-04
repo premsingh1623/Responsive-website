@@ -735,7 +735,6 @@
         margin: 0.5em 0em;
         font-size: 0.7em;
     } 
-    
     #navbar{
         position:absolute;
     }
@@ -752,7 +751,16 @@
         flex-direction: column;
         height: 45vh;   
     }
-    
+    #client::before{
+        content: "";
+        position: absolute;
+        background-color: #025;
+        height: 50%;
+        width: 100%;
+        z-index: -1;
+        opacity: 1;
+        -webkit-transform: rotate(-2deg) skew(-2deg);
+    }
     .form-group input{
         width: 200px;
         align-items: center;
