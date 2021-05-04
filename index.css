@@ -768,6 +768,10 @@
     #serve3 h1{
         font-size: 1.5rem;
     }
+    #services1 a {
+        margin: 0 0vh;
+        width: auto;
+    }
     #services2 a {
         margin: 0 0vh;
         width: auto;
