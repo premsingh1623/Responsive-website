@@ -746,6 +746,15 @@
         transform: scaleX(1.05);
         transition-duration: 1s;
     }
+    #services .box3 img{
+        width: 200px;
+        height: 200px;
+    }
+    .box3 p {
+        font-size: 1.05rem;
+        padding: 5% 5%;
+        line-height: 1.5rem;
+    }
     #client {
         justify-content: flex-end;
         flex-direction: column;
