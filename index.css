@@ -725,7 +725,13 @@
     #home{
         margin-top: 15vh;
     }
+    #services .box3 img:hover{
+        opacity: 0.8;
+        transform: scaleX(1.05);
+        transition-duration: 1s;
+    }
     #client {
+        justify-content: flex-end;
         flex-direction: column;
         height: 45vh;   
     }
