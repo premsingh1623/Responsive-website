@@ -755,6 +755,62 @@
         padding: 5% 5%;
         line-height: 1.5rem;
     }
+    #serve h1{
+        font-size: 1.5rem;
+    }
+    #serve1 h1{
+        font-size: 1.5rem;
+    }
+    #serve2 h1{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    #serve3 h1{
+        font-size: 1.5rem;
+    }
+    #services1 a {
+        margin: 0 10vh;
+    }
+    #services1 h1 {
+        margin: 0 5vh;
+        padding: 2%;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    #services2 h1 {
+        margin: 0 5vh;
+        padding: 2%;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .box5 img {
+        height: 41vh;
+        width: 66%;
+        border-radius: 10px;
+        display: block;
+        margin: 15% 0% 0% 13%;
+    }
+    #home::before {
+        content: "";
+        position: absolute;
+        background-color: #d2e4e0;
+        height: 150vh;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }    
+    .box5::before {
+        content: "";
+        position: absolute;
+        background-color: #025;
+        background-image: url(https://assets.website-files.com/5e80894…/5e808c2…_Lines%201.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40%;
+        width: 80%;
+        z-index: -1;
+        opacity: 1;
+    }
     #client {
         justify-content: flex-end;
         flex-direction: column;
