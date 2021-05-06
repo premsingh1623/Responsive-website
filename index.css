@@ -43,7 +43,7 @@
 }
 #logo h3{
     color: #025;
-    
+    font-size: 1.1rem;
 }
 #logo a{
     text-decoration: none;
@@ -134,7 +134,7 @@
     position: absolute;
     background-color: #eef0f4;
     width: 100%;
-    height: 70rem;
+    height: 180vh;
     z-index: -1;
     opacity: 0.89;
 
@@ -490,7 +490,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #eef0f4;
-    padding: 4%;
+    padding: 4% 7%;
 }
 .box7 h2,h3{
     display: inline;
@@ -502,7 +502,7 @@
 }
 .box7 h2{
     border-radius: 35px;
-    padding: 7px 16px;
+    padding: 10px 16px;
     background-color:black;
     color: white;
 }
@@ -556,6 +556,116 @@
   0%{bottom:-30px}
   100%{bottom:0;}
 }
+#navi{
+    display: none;
+    position: relative;
+}
+#menuToggle{
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle a{
+  text-decoration: none;
+  color: #025;
+  
+  transition: color 0.3s ease;
+}
+#menuToggle a:hover
+{
+  color: tomato;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #025;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: fixed;
+  width: 77%;
+  margin: -100px 0px 0 -33px;
+  padding: 12%;
+  padding-top: 125px;
+  
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 .fade-in h1{
     position:relative;
     overflow:hidden;
@@ -585,10 +695,10 @@
     }
     .box7 h2{
         border-radius: 35px;
-        padding: 3px 8px;
+        padding: 7px 12px;
         background-color:black;
         color: white;
-        font-size: 0.2rem;
+        font-size: 0.8rem;
     }
     .box7 a{
         text-decoration: none;
@@ -600,7 +710,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #025;
         cursor: pointer;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .box7 h4{
         margin: 20px 0px;
@@ -719,6 +829,7 @@
         float: right;
         color: white;
         text-decoration: none;
+        padding-right: 15px;
     }
     .dropdown-content {
         min-width: 165px;   
@@ -735,8 +846,28 @@
         margin: 0.5em 0em;
         font-size: 0.7em;
     } 
+    .dropdown-content{
+        min-width: 150px;
+    }
+    #navi{
+        display: block;
+        position: relative;
+    }
+    #navbar{
+        display: none;
+        background-color: #eef0f4;
+    }
+    #navi .btn{
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    #navi h5{
+        color: white;
+    }
+    
     #home{
-        margin-top: 15vh;
+    
     }
     #services .box3 img:hover{
         opacity: 0.8;
@@ -765,6 +896,9 @@
     #serve3 h1{
         font-size: 1.5rem;
     }
+    #serve4 h1{
+        padding-top: 3vh;
+    }
     #services1 a {
         margin: 0 0vh;
         width: auto;
@@ -786,8 +920,8 @@
         font-size: 1rem;
     }
     .box5 img {
-        height: 41vh;
-        width: 66%;
+        height: 35vh;
+        width: 60%;
         border-radius: 10px;
         display: block;
         margin: 15% 0% 0% 13%;
@@ -796,8 +930,8 @@
         content: "";
         position: absolute;
         background-color: #eef0f4;
-        height: 150vh;
-        width: 100%;
+        height: 170vh;
+        width:100%;
         z-index: -1;
         opacity: 0.89;
     }    
@@ -841,17 +975,20 @@
         padding-bottom: 0.5rem;
         padding-top: 10vh;
     }
+    .box7{
+        flex: 1 70%;
+    }
     .box7 h2,h3{
         display: inline;
         font-family: 'Leckerli One';
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .box7 h2{
         border-radius: 35px;
         
         background-color:black;
         color: white;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     .box7 a{
         text-decoration: none;
@@ -864,12 +1001,14 @@
         color: #025;
         cursor: pointer;
         font-size: 0.5rem;
+        
     }
     .box7 h4{
-        font-size: 0.7rem;
-        margin: 0px 0px;
+        font-size: 1rem;
+        margin: 8px 0px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #025;
+        font-stretch: ultra-expanded;
     } 
 
 }
