@@ -378,7 +378,7 @@
 
 #services2 a{
     color: white;
-    margin: 0 15vh;
+    margin: 0 7vh;
     padding: 2%;
     text-decoration: none;
     display: block;
@@ -722,7 +722,7 @@
     }
     #home{
         flex-wrap: wrap;
-        margin-top: 8vh;
+        margin-top: 15vh;
     }
     #home .box h1{
         font-size: 1.5rem;
@@ -866,20 +866,45 @@
         color: white;
     }
     
-    #home{
-    
+    #home {
+        flex-wrap: wrap;
+        margin-top: 8vh;
     }
     #services .box3 img:hover{
         opacity: 0.8;
         transform: scaleX(1.05);
         transition-duration: 1s;
     }
+    #services1 .box4 img {
+        height: 250px;
+        width: 250px;
+    }
+    #services2 .box4 img {
+        height: 250px;
+        width: 250px;
+    }
     #services .box3 img{
         width: 200px;
         height: 200px;
     }
+    #serve1 p {
+        padding: 2%;
+        font-size: 0.8rem;
+    }
+    #serve2 p {
+        padding: 2%;
+        font-size: 0.8rem;
+    }
+    #serve3 p {
+        padding: 4% 2%;
+        font-size: 0.8rem;
+    }
+    #serve4 p {
+        padding: 4% 2%;
+        font-size: 0.8rem;
+    }
     .box3 p {
-        font-size: 1.05rem;
+        font-size:0.7rem;
         padding: 5% 5%;
         line-height: 1.5rem;
     }
@@ -888,6 +913,8 @@
     }
     #serve1 h1{
         font-size: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 3vh;
     }
     #serve2 h1{
         font-size: 1.5rem;
@@ -897,7 +924,7 @@
         font-size: 1.5rem;
     }
     #serve4 h1{
-        padding-top: 3vh;
+        padding: 2vh 1vh 1vh 1vh;
     }
     #services1 a {
         margin: 0 0vh;
@@ -926,11 +953,19 @@
         display: block;
         margin: 15% 0% 0% 13%;
     }
+    #home p {
+        padding-bottom: 10px;
+        font-size: 0.8rem;
+        padding-right: 0px;
+        line-height: 1.5;
+        color: #025;
+        font-family: Sato, sans-serif;
+    }
     #home::before {
         content: "";
         position: absolute;
         background-color: #eef0f4;
-        height: 170vh;
+        height: 200vh;
         width:100%;
         z-index: -1;
         opacity: 0.89;
@@ -974,6 +1009,7 @@
         color: white;
         padding-bottom: 0.5rem;
         padding-top: 10vh;
+        font-size: 1rem;
     }
     .box7{
         flex: 1 70%;
@@ -1012,4 +1048,6 @@
     } 
 
 }
-  
+@media screen and (max-width:360px){
+    
+}
